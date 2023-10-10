@@ -24,6 +24,7 @@ La navigation et la connexion sont déjà terminées. Pour les pages en cours, l
 * Terminer l'ajout de commentaires.
 * Terminer la possibilité de pouvoir noter un livre.
 * Gérer un CRUD en front (accessible uniquement aux admin) pour gérer les auteurs
+* Gérer une nouvelle table genre (ex: aventure, policier, horreur etc.). On devra pouvoir associer plusieurs genres à un seul livre.
 
 ## Bonus
 * Pouvoir filtrer les livres par catégorie
