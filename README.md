@@ -11,6 +11,7 @@
 
 ## Contexte
 Un prestataire a commencé à mettre en place le site Bookeo en utilisant une structure MVC. Ce site a pour but de permettre aux visiteurs de consulter des fichiers sur des livres, des bandes dessinées et des mangas, ainsi que de pouvoir commenter et noter ces fichiers.
+https://vimeo.com/873226618/6f08f73e9b?share=copy
 
 ## L'existant
 La navigation et la connexion sont déjà terminées. Pour les pages en cours, le code HTML a déjà été ajouté dans les différentes pages du dossier templates.
