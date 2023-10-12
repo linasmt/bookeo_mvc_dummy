@@ -1,8 +1,8 @@
 <?php
     return [
-        'db_name' => 'keyce_bookeo_dev',
-        'db_user' => 'root',
-        'db_password' => '',
-        'db_port' => '3306',
+        'db_name' => 'bookeo',
+        'db_user' => 'LinaBookeo',
+        'db_password' => 'Bookeo',
+        'db_port' => '8889',
         'db_host' => 'localhost'
     ];

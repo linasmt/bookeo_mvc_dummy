@@ -32,7 +32,7 @@ class UserController extends Controller
             ]);
         }
     }
-  
+
     protected function register()
     {
         try {
@@ -41,19 +41,28 @@ class UserController extends Controller
 
             if (isset($_POST['saveUser'])) {
                 //@todo gérer l'inscription utilisateur
+                $user->setFirstName($_POST['first_name']);
+                $user->setLastName($_POST['last_name']);
+                $user->setEmail($_POST['email']);
+                $user->setPassword($_POST['password']);
+
+                $userRepository = new UserRepository();
+                $userRepository->persist($user);
+                header('Location: /');
+                exit();
             }
 
             $this->render('user/add_edit', [
-                'user' => '',
+                'user' => $user,
                 'pageTitle' => 'Inscription',
-                'errors' => ''
+                'errors' => $errors
             ]);
 
         } catch (\Exception $e) {
             $this->render('errors/default', [
                 'error' => $e->getMessage()
             ]);
-        } 
+        }
 
     }
 
